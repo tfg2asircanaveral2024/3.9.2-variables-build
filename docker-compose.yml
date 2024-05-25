@@ -1,0 +1,7 @@
+services:
+  ubuntu-env:
+    build:
+      context: creacion-imagen
+      dockerfile: Dockerfile
+    environment:
+      - VARIABLE=${VARIABLE_ENTORNO:-ValorPorDefecto}
